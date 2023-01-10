@@ -8,5 +8,6 @@ function chutar() {
         return (elementoResultado.innerHTML = `Acertou! o numero é: ${numSecreto}`);
     else if (chute < 0 || chute > 10)
         return (elementoResultado.innerHTML = `Numero invalido! Digite um número entre 0 e 10`);
-    else return (elementoResultado.innerHTML = "Errou");
+    else 
+        return (elementoResultado.innerHTML = "Errou");
 }
