@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --white-color: #FFF;
+    --color-blue: #74B6F8;
+    --color-blue2: #368FE9;
+    --color-gray: #EEE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin 0;
+    padding: 0;
+    font-family: 'Open sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-blue);
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 64rem;
+    margin: 10rem auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    color:  var(--white-color);
+}
+
+.container input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: .4rem;
+    border-bottom: 1px solid var(--white-color);
+    width: 80%;
+}
+
+.container input::placeholder {
+    color: var(--white-color);
+}
+
+.container input:focus {
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.container button {
+    padding: .6rem;
+    font-size: 1rem;
+    width: 80%;
+    background-color: var(--color-blue2);
+    border: none;
+    border-radius: 1rem;
+    color: var(--white-color);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: var(--color-blue);
+    transition: .4s;
+}
+
+
